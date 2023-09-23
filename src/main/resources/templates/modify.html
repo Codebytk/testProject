@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:object="${boardDTO}" th:action="@{|/modifiy/${baord.idx}|}" method="post">
+		<input type="text" name="title">
+		<input type="text" name="content">
+		<button value="제출하기">제출하기
+		</button>
+	</form>
+
+</body>
+</html>

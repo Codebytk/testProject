@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>제목: [[${board.title}]]</h1>
+<h1>내용: [[${board.content}]]</h1>
+<a th:href="@{|/delete/${board.idx}|}">삭제하기</a>
+<a th:href="@{|/modifiy/${board.idx}|}">수정하기</a>
+</body>
+</html>

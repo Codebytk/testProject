@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:object="${boardDTO}" th:action="@{/create}" method="post">
+		<input type="text" name="title">
+		<input type="text" name="content">
+		<button value="제출하기" />
+	</form>
+
+</body>
+</html>

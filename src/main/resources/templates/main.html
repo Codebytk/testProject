@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div>
+		<table>
+		<th>
+			<td>
+				제목
+			</td>
+			<td>
+				내용
+			</td>
+		</th>
+		<tr th:each="board : ${board}">
+			<td><a th:href="@{|/${board.idx}|}">[[${board.title}]]</a></td><br>
+			<td>[[${board.content}]]</td>
+		</tr>
+		</table>
+	</div>
+
+</body>
+</html>
